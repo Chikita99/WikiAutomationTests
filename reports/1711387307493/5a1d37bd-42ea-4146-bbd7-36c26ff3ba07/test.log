@@ -1,0 +1,8 @@
+[2024-03-25 05:21:49] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-03-25 05:21:49] [1] [INFO] TEST [WikiTestProj - verifySideBarMenu] STARTED at [19:21:49 2024-03-25]
+[2024-03-25 05:21:49] [1] [INFO] Starting driver session...
+[2024-03-25 05:21:52] [1] [INFO] Driver session started.
+[2024-03-25 05:21:53] [1] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
+[2024-03-25 05:21:54] [1] [INFO] Element 'hamburgerMenuButton' is clicked.
+[2024-03-25 05:21:56] [1] [INFO] Element 'hamburgerMenuSidebarButton' is clicked.
+[2024-03-25 05:22:00] [1] [INFO] TEST [WikiTestProj - verifySideBarMenu] PASSED at [19:22:00 2024-03-25]
