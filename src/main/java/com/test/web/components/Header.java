@@ -54,6 +54,13 @@ public class Header extends AbstractUIObject {
     @FindBy(xpath = "//div[@id='vector-main-menu-pinned-container']")
     private ExtendedWebElement sidebarMainMenu;
 
+    //Create and Log in
+    @FindBy(xpath = "//li[@id='pt-createaccount-2']/a")
+    private ExtendedWebElement createAccountLink;
+
+    @FindBy(xpath = "//li[@id='pt-login-2']/a")
+    private ExtendedWebElement logInLink;
+
 
     public Header(WebDriver driver) {
         super(driver);
@@ -174,5 +181,13 @@ public class Header extends AbstractUIObject {
 
     public ExtendedWebElement getSidebarMainMenu() {
         return sidebarMainMenu;
+    }
+
+    public ExtendedWebElement getCreateAccountLink() {
+        return createAccountLink;
+    }
+
+    public ExtendedWebElement getLogInLink() {
+        return logInLink;
     }
 }

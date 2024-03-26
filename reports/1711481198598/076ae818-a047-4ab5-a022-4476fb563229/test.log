@@ -1,0 +1,38 @@
+[2024-03-26 07:26:41] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-03-26 07:26:41] [1] [INFO] TEST [WikiTestProj - accountLinksTest] STARTED at [21:26:41 2024-03-26]
+[2024-03-26 07:26:41] [1] [INFO] Starting driver session...
+[2024-03-26 07:26:44] [1] [INFO] Driver session started.
+[2024-03-26 07:26:44] [1] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
+[2024-03-26 07:27:08] [1] [ERROR] TEST [WikiTestProj - accountLinksTest] FAILED at [21:27:08 2024-03-26] - Unable to found Create Account expected [true] but found [false]
+
+org.testng.Assert.fail(Assert.java:111)
+org.testng.Assert.failNotEquals(Assert.java:1578)
+org.testng.Assert.assertTrue(Assert.java:57)
+com.test.HeaderComponentTest.accountLinksTest(HeaderComponentTest.java:159)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:819)
+org.testng.TestRunner.run(TestRunner.java:619)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+org.testng.TestNG.runSuites(TestNG.java:1134)
+org.testng.TestNG.run(TestNG.java:1101)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

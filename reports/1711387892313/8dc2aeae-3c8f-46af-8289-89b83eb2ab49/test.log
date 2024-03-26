@@ -1,8 +1,0 @@
-[2024-03-25 05:31:47] [1] [WARN] Reporting disabled: using no op test run registrar
-[2024-03-25 05:31:47] [1] [INFO] TEST [WikiTestProj - verifySearchResultList] STARTED at [19:31:47 2024-03-25]
-[2024-03-25 05:31:47] [1] [INFO] Starting driver session...
-[2024-03-25 05:31:49] [1] [INFO] Driver session started.
-[2024-03-25 05:31:49] [1] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
-[2024-03-25 05:31:51] [1] [INFO] Keys 'Car' are sent to element 'searchInput'.
-[2024-03-25 05:31:53] [1] [INFO] Element 'searchResultListElements1' is clicked.
-[2024-03-25 05:31:54] [1] [INFO] TEST [WikiTestProj - verifySearchResultList] PASSED at [19:31:54 2024-03-25]

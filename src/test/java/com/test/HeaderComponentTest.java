@@ -39,7 +39,7 @@ public class HeaderComponentTest extends AbstractTest {
     }
 
     @Test
-    public void verifySearchResultList() {
+    public void verifySearchResultListTest() {
         String searchName = "Car";
 
         SoftAssert sa = new SoftAssert();
@@ -66,7 +66,7 @@ public class HeaderComponentTest extends AbstractTest {
 
 
     @Test
-    public void verifyHamburgerMenu() {
+    public void verifyHamburgerMenuTest() {
         WebDriver driver = getDriver();
         HomePage page = new HomePage(driver);
         SoftAssert sa = new SoftAssert();
@@ -106,7 +106,7 @@ public class HeaderComponentTest extends AbstractTest {
     }
 
     @Test
-    public void verifySideBarMenu() {
+    public void verifySideBarMenuTest() {
         WebDriver driver = getDriver();
         HomePage page = new HomePage(driver);
         SoftAssert sa = new SoftAssert();
@@ -138,6 +138,28 @@ public class HeaderComponentTest extends AbstractTest {
         sa.assertTrue(page.getHeader().getMainMenuSubtitle("Contribute").isElementPresent(2), "'Contribute' sub-title are not present or incorrect");
         sa.assertTrue(page.getHeader().checkMainMenuNavigationItemsName(nameNavigationArray), "Main menu navigation items are not present");
         sa.assertTrue(page.getHeader().checkMainMenuInteractionItemsName(nameInteractionArray), "Main menu interaction items are not present");
+
+        page.getHeader().getMainMenuInteractionItem(5).click();
+        sa.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/wiki/Wikipedia:File_upload_wizard", "Url for opened page are not correct");
+
+
+        sa.assertAll();
+    }
+
+
+
+    @Test
+    public void accountLinksTest() {
+        WebDriver driver = getDriver();
+        HomePage page = new HomePage(driver);
+        SoftAssert sa = new SoftAssert();
+
+        page.open();
+
+        Assert.assertTrue(page.getHeader().getCreateAccountLink().isClickable(), "Unable to found Create Account link");
+        Assert.assertTrue(page.getHeader().getLogInLink().isClickable(), "Unable to found Log in link");
+        sa.assertEquals(page.getHeader().getCreateAccountLink().getAttribute("href"), "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page", "Url link for Create Account are incorrect");
+        sa.assertEquals(page.getHeader().getLogInLink().getAttribute("href"), "https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page", "Url link for Log in are incorrect");
 
         sa.assertAll();
     }
