@@ -1,6 +1,0 @@
-[2024-03-26 07:32:58] [1] [WARN] Reporting disabled: using no op test run registrar
-[2024-03-26 07:32:58] [1] [INFO] TEST [WikiTestProj - accountLinksTest] STARTED at [21:32:58 2024-03-26]
-[2024-03-26 07:32:58] [1] [INFO] Starting driver session...
-[2024-03-26 07:33:01] [1] [INFO] Driver session started.
-[2024-03-26 07:33:02] [1] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
-[2024-03-26 07:33:03] [1] [INFO] TEST [WikiTestProj - accountLinksTest] PASSED at [21:33:03 2024-03-26]

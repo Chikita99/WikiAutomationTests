@@ -49,15 +49,10 @@ public class HeaderComponentTest extends AbstractTest {
         page.open();
 
         Assert.assertTrue(page.getHeader().isElementPresent(1), "Header not present");
-
         page.getHeader().typeSearchInputValue(searchName);
-
         Assert.assertTrue(page.getHeader().getSearchResultList().isElementPresent(2), "Unable to found SearchResultList");
-
         sa.assertTrue(page.getHeader().checkResultListElements(11), "Incorrect elements number in Result List");
-
         page.getHeader().getSearchResultListElement().get(1).click();
-
         sa.assertEquals(driver.getCurrentUrl(), "https://en.wikipedia.org/wiki/Caribbean", "Url for opened page are not correct");
 
         sa.assertAll();
@@ -160,10 +155,12 @@ public class HeaderComponentTest extends AbstractTest {
         Assert.assertTrue(page.getHeader().getLogInLink().isClickable(), "Unable to found Log in link");
         sa.assertEquals(page.getHeader().getCreateAccountLink().getAttribute("href"), "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page", "Url link for Create Account are incorrect");
         sa.assertEquals(page.getHeader().getLogInLink().getAttribute("href"), "https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page", "Url link for Log in are incorrect");
+        page.getHeader().getThreeDotsMenu().click();
+        sa.assertEquals(page.getHeader().getThreeDotsMenuTitle(), "Pages for logged out editors learn more", "Title for ThreeDotsMenuTitle are incorrect");
+        sa.assertEquals(page.getHeader().getThreeDotsMenuTitleUrl(), "https://en.wikipedia.org/wiki/Help:Introduction", "Title url are incorrect for ThreeDotsMenu component");
+        sa.assertEquals(page.getHeader().getThreeDotsMenuTitleListItem(1).getAttribute("href"), "https://en.wikipedia.org/wiki/Special:MyContributions", "ThreeDotsMenu list item #1 have incorrect url");
+        sa.assertEquals(page.getHeader().getThreeDotsMenuTitleListItem(2).getAttribute("href"), "https://en.wikipedia.org/wiki/Special:MyTalk", "ThreeDotsMenu list item #2 have incorrect url");
 
         sa.assertAll();
     }
-
-
-
 }

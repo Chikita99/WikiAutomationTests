@@ -61,6 +61,18 @@ public class Header extends AbstractUIObject {
     @FindBy(xpath = "//li[@id='pt-login-2']/a")
     private ExtendedWebElement logInLink;
 
+    @FindBy(xpath = "//input[@id='vector-user-links-dropdown-checkbox']")
+    private ExtendedWebElement threeDotsMenu;
+
+    @FindBy(xpath = "//div[@id='p-user-menu-anon-editor']//div[@class='vector-menu-heading']")
+    private ExtendedWebElement threeDotsMenuTitle;
+
+    @FindBy(xpath = "//div[@id='p-user-menu-anon-editor']//div[@class='vector-menu-heading']/a")
+    private ExtendedWebElement threeDotsMenuTitleUrl;
+
+    @FindBy(xpath = "//div[@id='p-user-menu-anon-editor']//ul[@class='vector-menu-content-list']/li[%d]/a")
+    private ExtendedWebElement threeDotsMenuTitleListItem;
+
 
     public Header(WebDriver driver) {
         super(driver);
@@ -189,5 +201,21 @@ public class Header extends AbstractUIObject {
 
     public ExtendedWebElement getLogInLink() {
         return logInLink;
+    }
+
+    public ExtendedWebElement getThreeDotsMenu() {
+        return threeDotsMenu;
+    }
+
+    public String getThreeDotsMenuTitle() {
+        return threeDotsMenuTitle.getText();
+    }
+
+    public String getThreeDotsMenuTitleUrl() {
+        return threeDotsMenuTitleUrl.getAttribute("href");
+    }
+
+    public ExtendedWebElement getThreeDotsMenuTitleListItem(int index) {
+        return threeDotsMenuTitleListItem.format(index);
     }
 }
