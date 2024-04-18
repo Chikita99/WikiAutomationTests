@@ -1,0 +1,54 @@
+[2024-04-18 05:30:23] [1] [INFO] 
+============= Basic configuration =============
+env=PROD
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+browser=chrome
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserVersion=*
+browserName=chrome
+============= Test configuration ==============
+thread_count=1
+data_provider_thread_count=1
+===============================================
+
+[2024-04-18 05:30:23] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-18 05:30:25] [1] [INFO] CARINA_CORE_VERSION: 1.2.8
+[2024-04-18 05:30:25] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-18 05:30:25] [1] [ERROR] TEST [WikiTestProj - UserLogInTest] FAILED at [20:30:25 2024-04-18] - 
+Cannot inject @Test annotated Method [UserLogInTest] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+
+org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+org.testng.internal.Parameters.createParameters(Parameters.java:708)
+org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:794)
+org.testng.TestRunner.run(TestRunner.java:596)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+org.testng.SuiteRunner.run(SuiteRunner.java:276)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+org.testng.TestNG.runSuites(TestNG.java:1063)
+org.testng.TestNG.run(TestNG.java:1031)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+[2024-04-18 05:30:25] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2024-04-18 05:30:25] [1] [INFO] RESULT #1: TEST [WikiTestProj - UserLogInTest] FAIL [log=file:///Users/mnabaranchuk/Documents/WikiTestProj/reports/1713461423723/1713461423723/test.log]

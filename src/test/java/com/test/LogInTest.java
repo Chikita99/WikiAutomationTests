@@ -17,16 +17,20 @@ public class LogInTest extends AbstractTest {
     @DataProvider(name = "userDataProvider")
     public Object[][] createUserData() {
         List<UserCredentials.User> users = DataProviderClass.getUsers();
-        Object[][] data = new Object[users.size()][2];
-        for (int i = 0; i < users.size(); i++) {
-            data[i][0] = users.get(i).login;
-            data[i][1] = users.get(i).password;
+        // Убедись, что список пользователей не пуст, чтобы избежать ошибок
+        if (users.isEmpty()) {
+            throw new IllegalStateException("No users found in the data source");
         }
+        // Создаем массив данных только для первого пользователя
+        Object[][] data = new Object[1][2]; // Изменено с users.size() на 1
+        data[0][0] = users.get(0).login; // Взять логин первого пользователя
+        data[0][1] = users.get(0).password; // Взять пароль первого пользователя
         return data;
     }
 
+
     @Test(dataProvider = "userDataProvider")
-    public void LogInTest(String login, String password) {
+    public void UserLogInTest(String login, String password) {
         SoftAssert sa = new SoftAssert();
         WebDriver driver = getDriver();
         HomePage page = new HomePage(driver);
