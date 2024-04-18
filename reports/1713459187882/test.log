@@ -1,4 +1,4 @@
-[2024-04-01 04:52:26] [1] [INFO] 
+[2024-04-18 04:53:07] [1] [INFO] 
 ============= Basic configuration =============
 env=PROD
 =========== Encryptor configuration ===========
@@ -17,10 +17,10 @@ thread_count=1
 data_provider_thread_count=1
 ===============================================
 
-[2024-04-01 04:52:26] [1] [WARN] Reporting disabled: using no op test run registrar
-[2024-04-01 04:52:28] [1] [INFO] [TestNG] Running:
+[2024-04-18 04:53:07] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-18 04:53:10] [1] [INFO] [TestNG] Running:
   /Users/mnabaranchuk/Library/Caches/JetBrains/IdeaIC2023.1/temp-testng-customsuite.xml
 
-[2024-04-01 04:52:28] [1] [INFO] CARINA_CORE_VERSION: 1.2.8
-[2024-04-01 04:52:37] [1] [INFO] INFO: '**************** Test execution summary ****************'.
-[2024-04-01 04:52:37] [1] [INFO] RESULT #1: TEST [WikiTestProj - accountLinksTest] FAIL [log=file:///Users/mnabaranchuk/Documents/WikiTestProj/reports/1711990346282/2f234e93-198b-408e-8eac-e5352b4f3caa/test.log]
+[2024-04-18 04:53:10] [1] [INFO] CARINA_CORE_VERSION: 1.2.8
+[2024-04-18 04:53:15] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2024-04-18 04:53:15] [1] [INFO] RESULT #1: TEST [WikiTestProj - accountLinksTest] FAIL [log=file:///Users/mnabaranchuk/Documents/WikiTestProj/reports/1713459187882/c24366f8-4e0a-4370-b0f7-8587c8132e95/test.log]
