@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "login": "99davidbrown99@gmail.com",
+      "password": "Hikaru1992!"
+    },
+    {
+      "login": "testuser2",
+      "password": "password2"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[2024-04-18 04:30:49] [1] [INFO] 
+============= Basic configuration =============
+env=PROD
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+browser=chrome
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserVersion=*
+browserName=chrome
+============= Test configuration ==============
+thread_count=1
+data_provider_thread_count=1
+===============================================
+
+[2024-04-18 04:30:49] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-18 04:30:51] [1] [INFO] CARINA_CORE_VERSION: 1.2.8
+[2024-04-18 04:30:51] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-18 04:30:51] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-18 04:30:51] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-18 04:30:51] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-18 04:30:51] [1] [WARN] Reporting disabled: using no op test run registrar

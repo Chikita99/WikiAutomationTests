@@ -1,0 +1,7 @@
+[2024-04-11 08:48:49] [30] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-11 08:48:49] [30] [INFO] TEST [Wiki - Home Page - accountLinksTest] STARTED at [11:48:49 2024-04-11]
+[2024-04-11 08:48:49] [30] [INFO] Starting driver session...
+[2024-04-11 08:48:51] [30] [INFO] Driver session started.
+[2024-04-11 08:48:52] [30] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
+[2024-04-11 08:48:54] [30] [INFO] Element 'threeDotsMenu' is clicked.
+[2024-04-11 08:48:56] [30] [INFO] TEST [Wiki - Home Page - accountLinksTest] PASSED at [11:48:56 2024-04-11]
