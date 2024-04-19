@@ -1,6 +1,7 @@
 package com.test;
 
 import com.test.web.HomePage;
+import com.test.web.LogInPage;
 import com.test.web.helpers.DataProviderClass;
 import com.test.web.helpers.UserCredentials;
 import com.zebrunner.carina.core.AbstractTest;
@@ -35,11 +36,17 @@ public class LogInTest extends AbstractTest {
         WebDriver driver = getDriver();
         HomePage page = new HomePage(driver);
 
+        String usernameTitle = "Username";
+
         page.open();
 
         Assert.assertTrue(page.getHeader().getLogInLink().clickIfPresent(), "Unable to found Log in link");
 
+        LogInPage loginpage = new LogInPage(driver);
 
+        sa.assertEquals(loginpage.getUsernameTitle(), "Usernam", "Username title is not located or different");
+
+        sa.assertAll();
     }
 
 }
