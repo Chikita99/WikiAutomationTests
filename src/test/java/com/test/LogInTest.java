@@ -44,7 +44,9 @@ public class LogInTest extends AbstractTest {
 
         LogInPage loginpage = new LogInPage(driver);
 
-        sa.assertEquals(loginpage.getUsernameTitle(), "Usernam", "Username title is not located or different");
+        sa.assertEquals(loginpage.getUsernameTitle(), "Username", "Username title is not located or different");
+        sa.assertEquals(loginpage.getPasswordTitle(), "Password", "Password title is not located or different");
+
 
         sa.assertAll();
     }

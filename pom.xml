@@ -20,14 +20,14 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>7.7.0</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.zebrunner/carina-api -->
         <dependency>
             <groupId>com.zebrunner</groupId>
             <artifactId>carina-api</artifactId>
-            <version>1.2.4</version>
+            <version>1.2.8</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.zebrunner/carina-core -->
         <dependency>
