@@ -1,7 +1,0 @@
-[2024-04-19 03:13:49] [1] [WARN] Reporting disabled: using no op test run registrar
-[2024-04-19 03:13:49] [1] [INFO] TEST [WikiTestProj - UserLogInTest [L01]] STARTED at [18:13:49 2024-04-19]
-[2024-04-19 03:13:49] [1] [INFO] Starting driver session...
-[2024-04-19 03:13:52] [1] [INFO] Driver session started.
-[2024-04-19 03:13:52] [1] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
-[2024-04-19 03:13:54] [1] [INFO] Element 'logInLink' is clicked.
-[2024-04-19 03:13:55] [1] [INFO] TEST [WikiTestProj - UserLogInTest [L01]] PASSED at [18:13:55 2024-04-19]

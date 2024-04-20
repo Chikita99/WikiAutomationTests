@@ -5,7 +5,9 @@ import com.test.web.LogInPage;
 import com.test.web.helpers.DataProviderClass;
 import com.test.web.helpers.UserCredentials;
 import com.zebrunner.carina.core.AbstractTest;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -42,10 +44,26 @@ public class LogInTest extends AbstractTest {
 
         Assert.assertTrue(page.getHeader().getLogInLink().clickIfPresent(), "Unable to found Log in link");
 
-        LogInPage loginpage = new LogInPage(driver);
+        LogInPage loginPage = new LogInPage(driver);
 
-        sa.assertEquals(loginpage.getUsernameTitle(), "Username", "Username title is not located or different");
-        sa.assertEquals(loginpage.getPasswordTitle(), "Password", "Password title is not located or different");
+        sa.assertEquals(loginPage.getUsernameTitle(), "Username", "Username title is not located or different");
+        sa.assertEquals(loginPage.getPasswordTitle(), "Password", "Password title is not located or different");
+        sa.assertEquals(loginPage.getUsernameForm().getAttribute("placeholder"), "Enter your username", "Username Form placeholder is incorrect.");
+        sa.assertEquals(loginPage.getPasswordForm().getAttribute("placeholder"), "Enter your password", "Password Form placeholder is incorrect.");
+
+        loginPage.typeUsername(login);
+        loginPage.typePassword(password);
+        sa.assertEquals(loginPage.getLoginCheckBoxText(), "Keep me logged in (for up to one year)", "Checkbox text incorrect or missing");
+        sa.assertTrue(loginPage.getLoginCheckBox().clickIfPresent(), "Checkbox is not present");
+
+        //checking svg image in CSS for checkbox
+        WebElement checkBoxIcon = loginPage.getLoginCheckBoxValue().getElement();
+
+        String script = "return window.getComputedStyle(arguments[0], '::before').getPropertyValue('background-image');";
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        String backgroundImage = (String) jsExecutor.executeScript(script, checkBoxIcon);
+
+        Assert.assertTrue(backgroundImage.contains("data:image/svg+xml"), "The checkbox does not have the expected SVG image when checked.");
 
 
         sa.assertAll();
