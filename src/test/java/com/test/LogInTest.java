@@ -38,8 +38,6 @@ public class LogInTest extends AbstractTest {
         WebDriver driver = getDriver();
         HomePage page = new HomePage(driver);
 
-        String usernameTitle = "Username";
-
         page.open();
 
         Assert.assertTrue(page.getHeader().getLogInLink().clickIfPresent(), "Unable to found Log in link");
@@ -63,7 +61,9 @@ public class LogInTest extends AbstractTest {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         String backgroundImage = (String) jsExecutor.executeScript(script, checkBoxIcon);
 
-        Assert.assertTrue(backgroundImage.contains("data:image/svg+xml"), "The checkbox does not have the expected SVG image when checked.");
+        sa.assertTrue(backgroundImage.contains("data:image/svg+xml"), "The checkbox does not have the expected SVG image when checked.");
+        Assert.assertTrue(loginPage.getLoginButton().clickIfPresent(), "Log in button not present or not clickable");
+        Assert.assertEquals(loginPage.getUserName(), "99Chikitas99", "User name incorrect or user not logged int");
 
 
         sa.assertAll();

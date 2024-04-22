@@ -28,6 +28,12 @@ public class LogInPage extends AbstractPage  {
     @FindBy(xpath = "//span[@class = 'cdx-checkbox__icon']")
     private ExtendedWebElement loginCheckBoxValue;
 
+    @FindBy(xpath = "//button[@id = 'wpLoginAttempt']")
+    private ExtendedWebElement loginButton;
+
+    @FindBy(xpath = "//li[@id = 'pt-userpage-2']//span")
+    private ExtendedWebElement userName;
+
     //Getters and Setters
 
     public String getUsernameTitle() {
@@ -44,6 +50,14 @@ public class LogInPage extends AbstractPage  {
 
     public ExtendedWebElement getPasswordForm() {
         return passwordForm;
+    }
+
+    public ExtendedWebElement getLoginButton() {
+        return loginButton;
+    }
+
+    public String getUserName() {
+        return userName.getText();
     }
 
     //Methods

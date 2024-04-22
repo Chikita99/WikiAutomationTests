@@ -1,0 +1,45 @@
+[2024-04-22 10:53:57] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-22 10:53:57] [1] [INFO] TEST [WikiTestProj - UserLogInTest [L01]] STARTED at [13:53:57 2024-04-22]
+[2024-04-22 10:53:57] [1] [INFO] Starting driver session...
+[2024-04-22 10:53:59] [1] [INFO] Driver session started.
+[2024-04-22 10:54:00] [1] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
+[2024-04-22 10:54:04] [1] [INFO] Element 'logInLink' is clicked.
+[2024-04-22 10:54:05] [1] [INFO] Keys '99Chikitas99' are sent to element 'usernameForm'.
+[2024-04-22 10:54:06] [1] [INFO] Keys 'Hikaru1992!' are sent to element 'passwordForm'.
+[2024-04-22 10:54:07] [1] [INFO] Element 'loginCheckBoxText' is clicked.
+[2024-04-22 10:54:12] [1] [INFO] Element 'loginButton' is clicked.
+[2024-04-22 10:54:15] [1] [ERROR] TEST [WikiTestProj - UserLogInTest [L01]] FAILED at [13:54:15 2024-04-22] - User name incorrect or user not logged int expected [99Chikitas9] but found [99Chikitas99]
+
+org.testng.Assert.fail(Assert.java:110)
+org.testng.Assert.failNotEquals(Assert.java:1413)
+org.testng.Assert.assertEqualsImpl(Assert.java:149)
+org.testng.Assert.assertEquals(Assert.java:131)
+org.testng.Assert.assertEquals(Assert.java:655)
+com.test.LogInTest.UserLogInTest(LogInTest.java:66)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

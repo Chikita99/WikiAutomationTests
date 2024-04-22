@@ -1,0 +1,27 @@
+[2024-04-22 09:44:44] [1] [INFO] 
+============= Basic configuration =============
+env=PROD
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+browser=chrome
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserVersion=*
+browserName=chrome
+============= Test configuration ==============
+thread_count=1
+data_provider_thread_count=1
+===============================================
+
+[2024-04-22 09:44:44] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-22 09:44:47] [1] [INFO] CARINA_CORE_VERSION: 1.2.8
+[2024-04-22 09:45:31] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2024-04-22 09:45:31] [1] [INFO] RESULT #1: TEST [Wiki - Home Page - accountLinksTest] PASS [log=file:///Users/mnabaranchuk/Documents/WikiTestProj/reports/1713779084392/d1a65485-755f-41d6-b304-5965f2057ca7/test.log]
+[2024-04-22 09:45:31] [1] [INFO] RESULT #2: TEST [Wiki - Home Page - verifyHamburgerMenuTest] PASS [log=file:///Users/mnabaranchuk/Documents/WikiTestProj/reports/1713779084392/5bbf30bb-7f78-414b-a048-298dc981642e/test.log]
+[2024-04-22 09:45:31] [1] [INFO] RESULT #3: TEST [Wiki - Home Page - verifySearchLineTest] PASS [log=file:///Users/mnabaranchuk/Documents/WikiTestProj/reports/1713779084392/5e7995cf-1cd6-4374-b5a7-0ae70fbed882/test.log]
+[2024-04-22 09:45:31] [1] [INFO] RESULT #4: TEST [Wiki - Home Page - verifySearchResultListTest] PASS [log=file:///Users/mnabaranchuk/Documents/WikiTestProj/reports/1713779084392/5ab0b2d5-7bf5-4499-b713-b2673a0cb826/test.log]
+[2024-04-22 09:45:31] [1] [INFO] RESULT #5: TEST [Wiki - Home Page - verifySideBarMenuTest] PASS [log=file:///Users/mnabaranchuk/Documents/WikiTestProj/reports/1713779084392/fab80c9e-b40b-4c43-a8b9-2428d5762b81/test.log]
