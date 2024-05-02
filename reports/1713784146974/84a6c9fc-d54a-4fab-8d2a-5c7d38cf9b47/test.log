@@ -1,0 +1,11 @@
+[2024-04-22 11:09:56] [41] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-22 11:09:56] [41] [INFO] TEST [Wiki - Log in feature - UserLogInTest [L01]] STARTED at [14:09:56 2024-04-22]
+[2024-04-22 11:09:56] [41] [INFO] Starting driver session...
+[2024-04-22 11:09:58] [41] [INFO] Driver session started.
+[2024-04-22 11:09:58] [41] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
+[2024-04-22 11:10:01] [41] [INFO] Element 'logInLink' is clicked.
+[2024-04-22 11:10:03] [41] [INFO] Keys '99Chikitas99' are sent to element 'usernameForm'.
+[2024-04-22 11:10:04] [41] [INFO] Keys 'Hikaru1992!' are sent to element 'passwordForm'.
+[2024-04-22 11:10:04] [41] [INFO] Element 'loginCheckBoxText' is clicked.
+[2024-04-22 11:10:10] [41] [INFO] Element 'loginButton' is clicked.
+[2024-04-22 11:10:11] [41] [INFO] TEST [Wiki - Log in feature - UserLogInTest [L01]] PASSED at [14:10:11 2024-04-22]

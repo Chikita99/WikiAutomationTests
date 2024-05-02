@@ -1,0 +1,7 @@
+[2024-04-22 11:09:26] [30] [WARN] Reporting disabled: using no op test run registrar
+[2024-04-22 11:09:26] [30] [INFO] TEST [Wiki - Home Page - verifySearchLineTest] STARTED at [14:09:26 2024-04-22]
+[2024-04-22 11:09:26] [30] [INFO] Starting driver session...
+[2024-04-22 11:09:28] [30] [INFO] Driver session started.
+[2024-04-22 11:09:28] [30] [INFO] INFO: opening url 'https://en.wikipedia.org/wiki/Main_Page'
+[2024-04-22 11:09:32] [30] [INFO] Keys 'Car' are sent to element 'searchInput'.
+[2024-04-22 11:09:34] [30] [INFO] TEST [Wiki - Home Page - verifySearchLineTest] PASSED at [14:09:34 2024-04-22]

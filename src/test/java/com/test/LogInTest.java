@@ -54,8 +54,8 @@ public class LogInTest extends AbstractTest {
         sa.assertEquals(loginPage.getLoginCheckBoxText(), "Keep me logged in (for up to one year)", "Checkbox text incorrect or missing");
         sa.assertTrue(loginPage.getLoginCheckBox().clickIfPresent(), "Checkbox is not present");
 
-        //checking svg image in CSS for checkbox
-        WebElement checkBoxIcon = loginPage.getLoginCheckBoxValue().getElement();
+
+        WebElement checkBoxIcon = loginPage.getLoginCheckBoxValue().getElement(); //checking svg image in CSS for checkbox
 
         String script = "return window.getComputedStyle(arguments[0], '::before').getPropertyValue('background-image');";
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -64,7 +64,6 @@ public class LogInTest extends AbstractTest {
         sa.assertTrue(backgroundImage.contains("data:image/svg+xml"), "The checkbox does not have the expected SVG image when checked.");
         Assert.assertTrue(loginPage.getLoginButton().clickIfPresent(), "Log in button not present or not clickable");
         Assert.assertEquals(loginPage.getUserName(), "99Chikitas99", "User name incorrect or user not logged int");
-
 
         sa.assertAll();
     }
